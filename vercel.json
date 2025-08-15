@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "builds": [{ "src": "dist/**", "use": "@vercel/static" }],
-  "routes": [{ "src": "/(.*)", "dest": "/dist/$1" }],
   "headers": [
     {
       "source": "/(.*\\.wasm)",
-      "headers": [{ "key": "Content-Type", "value": "application/wasm" }]
+      "headers": [
+        { "key": "Content-Type", "value": "application/wasm" }
+      ]
     }
   ]
 }
