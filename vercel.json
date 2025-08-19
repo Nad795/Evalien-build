@@ -1,21 +1,23 @@
 {
   "headers": [
     {
-      "source": "/(.*\\.wasm)",
+      "source": "/(.*)\\.wasm",
       "headers": [
         { "key": "Content-Type", "value": "application/wasm" },
         { "key": "Cross-Origin-Resource-Policy", "value": "same-origin" }
       ]
     },
     {
-      "source": "/(.*\\.pck)",
+      "source": "/(.*)\\.pck",
       "headers": [
+        { "key": "Content-Type", "value": "application/octet-stream" },
         { "key": "Cross-Origin-Resource-Policy", "value": "same-origin" }
       ]
     },
     {
-      "source": "/(.*\\.js)",
+      "source": "/(.*)\\.js",
       "headers": [
+        { "key": "Content-Type", "value": "application/javascript" },
         { "key": "Cross-Origin-Resource-Policy", "value": "same-origin" }
       ]
     },
